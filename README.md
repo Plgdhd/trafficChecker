@@ -11,38 +11,25 @@ Integration with a Flask API for real-time analysis
 Classification model with a pre-trained TensorFlow model
 
 Requirements
-Python 3.x
-
-TensorFlow
-
-Flask
-
-scikit-learn
-
-pandas
-
-numpy
+- Python 3.10
+- TensorFlow
+- Flask
+- scikit-learn
+- pandas
+- numpy
 
 Installation
 Clone the repository:
 
-bash
-Копировать
-Редактировать
 git clone https://github.com/Plgdhd/trafficChecker.git
 cd trafficChecker
 Install the dependencies:
 
-bash
-Копировать
-Редактировать
 pip install -r requirements.txt
 Run the Flask API:
 
-bash
-Копировать
-Редактировать
 python returner.py
+
 Usage
 Start the Flask server, and use the provided API endpoints to analyze HTTP requests.
 

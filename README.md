@@ -1,4 +1,4 @@
-trafficChecker
+### trafficChecker
 trafficChecker is a machine learning-based tool for analyzing server requests and redirecting them depending on their security. The project utilizes natural language processing (NLP) to classify HTTP requests and determine whether they are normal or potentially malicious. It uses a pre-trained machine learning model to assess incoming requests and make real-time decisions about their safety.
 
 Features

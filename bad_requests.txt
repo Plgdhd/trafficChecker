@@ -1,0 +1,17 @@
+Some random data that doesn't conform to HTTP
+
+GET /flights HTTP/1.1
+Host: example.com
+User-Agent: TestAgent
+GET http://localhost:8080
+GET http://localhost:8080
+GET /flights HTTP/1.1
+Host: example.com
+User-Agent: TestAgent
+GET /contact HTTP/1.1 Host:example.com
+GET /contact HTTP/1.1 
+Host:example.com
+POST /register HTTP/1.1 username=newuser&password=secure123
+POST /register HTTP/1.1 username=newuser&password=secure123
+POST /login HTTP/1.1 Host:example.com username=user&password=pass
+POST /search HTTP/1.1 q=<script>malicious()</script>
